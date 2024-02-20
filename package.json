@@ -11,19 +11,23 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"    
   },
   "dependencies": {
     "@react-three/drei": "^9.4.2",
     "@react-three/fiber": "^8.0.11",
-    "@splinetool/r3f-spline": "^1.0.1",
     "@splinetool/loader": "^1.0.50",
+    "@splinetool/r3f-spline": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "three": "^0.149.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^3.1.0-beta.0",
+    "gh-pages": "^6.1.1",
     "vite": "^4.1.0-beta.1"
-  }
+  },
+  "homepage": "logo.npc.institute"
 }
